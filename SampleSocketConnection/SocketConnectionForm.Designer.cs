@@ -51,8 +51,8 @@
             this.pnlIP = new System.Windows.Forms.Panel();
             this.flpIPPort = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlPort = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlIpList = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.grpKind.SuspendLayout();
             this.pnlIP.SuspendLayout();
             this.flpIPPort.SuspendLayout();
@@ -152,7 +152,7 @@
             this.label3.Location = new System.Drawing.Point(12, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 20);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 4;
             this.label3.Text = "送信メッセージ";
             // 
             // txtSendText
@@ -165,7 +165,7 @@
             this.txtSendText.Multiline = true;
             this.txtSendText.Name = "txtSendText";
             this.txtSendText.Size = new System.Drawing.Size(641, 73);
-            this.txtSendText.TabIndex = 4;
+            this.txtSendText.TabIndex = 5;
             this.txtSendText.Text = "テスト\r\nて\r\nて";
             // 
             // txtLog
@@ -178,8 +178,8 @@
             this.txtLog.Location = new System.Drawing.Point(12, 253);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
-            this.txtLog.Size = new System.Drawing.Size(760, 252);
-            this.txtLog.TabIndex = 7;
+            this.txtLog.Size = new System.Drawing.Size(641, 296);
+            this.txtLog.TabIndex = 8;
             // 
             // label4
             // 
@@ -187,7 +187,7 @@
             this.label4.Location = new System.Drawing.Point(14, 230);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 20);
-            this.label4.TabIndex = 6;
+            this.label4.TabIndex = 7;
             this.label4.Text = "送受信ログ";
             // 
             // label5
@@ -216,7 +216,7 @@
             this.btnSend.Location = new System.Drawing.Point(659, 177);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(113, 50);
-            this.btnSend.TabIndex = 5;
+            this.btnSend.TabIndex = 6;
             this.btnSend.Text = "送信";
             this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
@@ -254,10 +254,10 @@
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(181)))));
             this.btnClose.Enabled = false;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(12, 511);
+            this.btnClose.Location = new System.Drawing.Point(141, 80);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(113, 38);
-            this.btnClose.TabIndex = 8;
+            this.btnClose.TabIndex = 3;
             this.btnClose.Text = "切断";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -303,12 +303,6 @@
             this.pnlPort.Size = new System.Drawing.Size(98, 62);
             this.pnlPort.TabIndex = 1;
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // pnlIpList
             // 
             this.pnlIpList.Controls.Add(this.label5);
@@ -317,6 +311,12 @@
             this.pnlIpList.Name = "pnlIpList";
             this.pnlIpList.Size = new System.Drawing.Size(190, 133);
             this.pnlIpList.TabIndex = 2;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // SocketConnectionForm
             // 

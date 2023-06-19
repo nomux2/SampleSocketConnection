@@ -290,8 +290,6 @@ namespace SampleSocketConnection
 
             SocketStateClass state = new SocketStateClass()
             {
-                IPorHost = _remoteEndPoint.Address.ToString(),
-                Port = _remoteEndPoint.Port,
                 Buffer = recv_buffer,
                 Encoding = this.Encoding,
                 WorkSocket = _socket
@@ -380,8 +378,6 @@ namespace SampleSocketConnection
 
             SocketStateClass state = new SocketStateClass()
             {
-                IPorHost = _remoteEndPoint.Address.ToString(),
-                Port = _remoteEndPoint.Port,
                 Buffer = buffer,
                 Encoding = this.Encoding,
                 WorkSocket = _socket

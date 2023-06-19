@@ -12,10 +12,6 @@ namespace SampleSocketConnection
     /// </summary>
     public class SocketStateClass
     {
-        public string IPorHost { set; get; } = "";
-
-        public int Port { set; get; } = -1;
-
         //送受信用バッファ
         public byte[] Buffer { set; get; } = null;
 

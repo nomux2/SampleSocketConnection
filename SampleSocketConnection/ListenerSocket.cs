@@ -170,7 +170,7 @@ namespace SampleSocketConnection
                 //承認開始クライアントからの接続があればCallbackAcceptが発生する
                 _listener_socket.BeginAccept(new AsyncCallback(CallbackAccept), _listener_socket);
 
-                // シグナル状態にし、メインスレッドの処理を続行する
+                // シグナル状態になるまで待つ
                 DoneCheckAll.WaitOne();
             }
         }

@@ -167,8 +167,6 @@ namespace SampleSocketConnection
 
                     _socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                     _recving_flg = false;
-
-
                 }
 
                 //既に接続されている場合は、接続処理を行う

@@ -169,7 +169,7 @@ namespace SampleSocketConnection
                     _recving_flg = false;
                 }
 
-                //既に接続されている場合は、接続処理を行う
+                //既に接続されている場合は、接続処理を抜ける
                 if (_socket.Connected)
                 {
                     throw new ApplicationException("すでに接続されています。");
